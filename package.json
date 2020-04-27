@@ -14,7 +14,7 @@
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzzio/izzzio.git"
+    "url": "https://github.com/Izzzio/iz3-db-mongodb.git"
   },
   "keywords": [
     "blockchain",
