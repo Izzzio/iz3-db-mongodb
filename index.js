@@ -16,18 +16,17 @@
  limitations under the License.
  */
 
-const logger = new (require(global.PATH.mainDir + '/modules/logger'))("TestPlugin");
+const logger = new (require(global.PATH.mainDir + '/modules/logger'))("MongoDB");
 const path = require('path');
 
 const PROTOCOL_PREFIX = 'mongodb';
 
 module.exports = function register(blockchain, config, storj) {
-    logger.info('Initialize mongo DB');
+    logger.info('Initialize MongoDB');
 
     let plugins = storj.get('plugins');
-    //console.log(JSON.stringify(plugins));
-    //console.log(plugins);
+
     plugins.db.registerModule(PROTOCOL_PREFIX, __dirname + path.sep + 'mongoDB.js');
-    //console.log(plugins);
+
     logger.info('OK');
 };
