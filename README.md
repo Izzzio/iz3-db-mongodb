@@ -3,6 +3,18 @@ MongoDB database plugin
 
 ## Usage
 
+Install globally by
+
+```
+npm -g i iz3-db-mongodb
+```
+
+or install as depency in DApp
+
+```
+npm i --save iz3-db-mongodb
+```
+
 Example - anonymus connection
 config.json
 ```
